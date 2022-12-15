@@ -131,7 +131,7 @@ console.log(total);
 
 //so numArray gets passed by forEach to be the parameter for sum??
 
-
+total = 1;
 
 function product(array1) {
   total *= array1;
@@ -142,8 +142,27 @@ console.log(total);
 
 // forEach exercise 4
 
-let studentGrades = [70, 20, 53, 64, 78, 60, 32]
+let studentGrades = [70, 20, 53, 64, 78, 60, 32];
 
 function passedGrades(itemGrade) {
-if(itemGrade )
+  if (itemGrade >= 50) {
+    console.log(itemGrade);
+  }
 }
+
+studentGrades.forEach(passedGrades);
+
+// join exercise 1
+
+let students = ["Dave", "Steve", "Jim"];
+
+let text = students.join(" ");
+
+console.log(text);
+
+function toCSV(arrayCommad) {
+  text = arrayCommad.join(", ");
+  console.log(text);
+}
+
+toCSV(students);
